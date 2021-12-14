@@ -5,8 +5,11 @@ li {
 a {
     text-decoration: none;
     color: black;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+header a {
     border-right: 1px solid black;
 }
 
@@ -17,8 +20,8 @@ ul {
 
 i {
     display: block;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
     font-size: 18px;
 }
 
@@ -72,6 +75,9 @@ div.right {}
         margin-top: 2px;
         margin-top: 2px;
     }
+    #chat-with-us {
+        display: none;
+    }
 }
 
 
@@ -119,4 +125,49 @@ div.right {}
         width: 95%;
         max-width: 1650px;
     }
+}
+
+
+/* Main Content */
+
+div.main-content {
+    font-family: 'poppins', sans-serif;
+}
+
+
+/* Navbar */
+
+
+/* Navbar inner */
+
+
+/* Navbar element */
+
+nav {
+    display: flex;
+}
+
+
+/* Navbra start */
+
+div.Navbar-start {
+    display: flex;
+}
+
+
+/* Navbar center serch */
+
+div.Navbar-center-serch {
+    width: 60%;
+}
+
+
+/* Center inner */
+
+
+/* Form */
+
+form {
+    display: flex;
+    padding: 30px;
 }
