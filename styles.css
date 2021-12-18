@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
 li {
     display: inline;
 }
@@ -132,10 +140,18 @@ div.right {}
 
 div.main-content {
     font-family: 'poppins', sans-serif;
+    position: relative;
 }
 
 
 /* Navbar */
+
+div.navbar {
+    max-width: 1800px;
+    margin: initial;
+    position: sticky;
+    top: -1px;
+}
 
 
 /* Navbar inner */
@@ -145,6 +161,16 @@ div.main-content {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.397);
+}
+
+nav i {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
@@ -152,22 +178,312 @@ nav {
 
 div.Navbar-start {
     display: flex;
+    width: 200px;
+    font-size: 14px;
+    background-color: initial;
+    align-items: center;
+}
+
+@media screen and (min-width:770px) {
+    div.Navbar-start {
+        width: 147px;
+        background-color: initial;
+    }
+}
+
+div.Navbar-start i {
+    font-size: inherit;
+    margin-left: 0px;
+}
+
+
+/* Navbar catagories */
+
+div.navbar-catagories {
+    display: none;
+}
+
+
+/*Navbar-logo*/
+
+@media screen and (max-width:768px) {
+    div.Navbar-start {
+        order: 1;
+        width: 147px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width:770px) {
+    div.logo {
+        width: 74px;
+        margin-right: 0px;
+    }
+    div.navbar-mobile-menu {
+        font-size: 30px;
+        margin-right: 30px;
+        width: 23px;
+    }
+}
+
+@media screen and (min-width:1070px) {
+    div.Navbar-start {
+        display: flex;
+        width: 200px;
+        font-size: 14px;
+        background-color: initial;
+        align-items: center;
+    }
+    div.navbar-catagories {
+        width: 104px;
+        display: initial;
+    }
+    div.navbar-mobile-menu {
+        display: none;
+    }
+    div.logo {
+        width: 96px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    div.Navbar-start {
+        width: 80px;
+        background-color: initial;
+    }
+    div.logo img {
+        width: 62px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    div.logo img {
+        width: 48px;
+    }
+}
+
+
+/* Mobile Navbar Menu */
+
+div.navbar-mobile-menu i {
+    color: rgb(38, 38, 39);
+}
+
+@media screen and (max-width:375px) {
+    div.navbar-mobile-menu i {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:375px) {
+    div.navbar-mobile-menu i {
+        font-size: 25px;
+    }
 }
 
 
 /* Navbar center serch */
 
 div.Navbar-center-serch {
-    width: 60%;
+    background-color: initial;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 45px;
+    margin: 10px 0px;
+    padding: 0px 1%;
 }
 
 
 /* Center inner */
 
+div.center-inner {
+    width: 100%;
+    padding: 0 2%;
+    padding: 3px 4px;
+    height: 45px;
+}
+
 
 /* Form */
 
 form {
+    width: 100%;
     display: flex;
-    padding: 30px;
+    justify-content: center;
+    background-color: #f7f7f9;
+    align-items: center;
+    border: 1px solid #f7f7f9;
+    border-radius: 20px;
+    height: 39px;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width:645px) {
+    div.form-dropdown {
+        display: none;
+    }
+}
+
+div.serchbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+div.serchbar input {
+    width: 95%;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    background-color: #f7f7f9;
+    border-left: 1px solid rgba(97, 95, 95, 0.24);
+    border-right: 1px solid rgba(97, 95, 95, 0.24);
+    padding-left: 5px;
+}
+
+div.serchbar input:focus {
+    border: none;
+    outline: none;
+}
+
+div.serch-button {
+    margin-left: 10px;
+    border: 1px solid #ffb100;
+    border-radius: 50%;
+    background-color: #ffb100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+    margin-right: 3px;
+}
+
+div.serch-button i {
+    font-size: 12px;
+    color: honeydew;
+}
+
+div.country {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+    width: 86px;
+    background-color: initial;
+    font-weight: bold;
+}
+
+div.country img {
+    width: 25px;
+    height: 15px;
+}
+
+@media screen and (min-width:1070px) {
+    div.form-dropdown {
+        width: 57px;
+        background-color: initial;
+    }
+}
+
+
+/*Navbar End*/
+
+div.Navbar-end {
+    background-color: initial;
+    display: flex;
+    align-items: center;
+}
+
+div.Navbar-end a {
+    padding: 0px;
+    background-color: initial;
+}
+
+@media screen and (min-width:992px) {
+    div.Navbar-end {
+        background-color: initial;
+        width: 346px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:293px) {
+    div.Navbar-end {
+        width: auto;
+        padding-right: 8px;
+    }
+}
+
+div.Navbar-end ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    flex-grow: 1;
+}
+
+
+/* Interchange of text in navbar end */
+
+span.desktop-navbar-end {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    span.desktop-navbar-end {
+        display: initial;
+    }
+    span.mobile-navbar-end {
+        display: none;
+    }
+}
+
+
+/* END OF Interchange of text in navbar end */
+
+@media screen and (min-width:1070px) {
+    div.Navbar-end {
+        background-color: initial;
+        width: 335px;
+        font-size: 14px;
+    }
+    div.Navbar-end a {
+        padding: 0px;
+    }
+}
+
+
+/* FOR MOBILE SCREENS */
+
+@media screen and (max-width:768px) {
+    div.Navbar-center-serch {
+        order: 3;
+        width: 500px;
+        height: 53px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding: 7 0 7px 0;
+        background-color: rgb(247, 247, 249);
+    }
+    div.center-inner {
+        height: 57px;
+        padding: 0px 5px;
+        margin-bottom: 0px;
+        height: 39px;
+    }
+    div.Navbar-end {
+        order: 2;
+    }
+    form {
+        background-color: #FFFFFF;
+    }
+    div.serchbar input {
+        background-color: #FFFFFF;
+    }
+    nav {
+        padding-top: 5px;
+        padding-left: 5px;
+    }
 }
