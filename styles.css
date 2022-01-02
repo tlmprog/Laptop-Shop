@@ -4,6 +4,7 @@
 
 body {
     margin: 0px;
+    background-color: #f8f8fa;
 }
 
 li {
@@ -33,6 +34,10 @@ i {
     font-size: 18px;
 }
 
+div.header-top {
+    background-color: white;
+}
+
 
 /* container */
 
@@ -40,7 +45,7 @@ i {
     background-color: #fff;
     display: flex;
     font-size: 12px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: black;
     font-weight: bold;
     width: 98%;
@@ -77,7 +82,7 @@ div.right {}
     color: darkslategray;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
     .whatsapp {
         display: block;
         margin-top: 2px;
@@ -91,7 +96,7 @@ div.right {}
 
 /* For Mobile Screens  XS */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .container {
         flex-wrap: wrap;
         justify-content: center;
@@ -116,19 +121,19 @@ div.right {}
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .container {
         width: 750px;
     }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     .container {
         width: 970px;
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     .container {
         width: 95%;
         max-width: 1650px;
@@ -139,7 +144,7 @@ div.right {}
 /* Main Content */
 
 div.main-content {
-    font-family: 'poppins', sans-serif;
+    font-family: "poppins", sans-serif;
     position: relative;
 }
 
@@ -164,8 +169,11 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFFFFF;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.397);
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
 }
 
 nav i {
@@ -184,7 +192,7 @@ div.Navbar-start {
     align-items: center;
 }
 
-@media screen and (min-width:770px) {
+@media screen and (min-width: 770px) {
     div.Navbar-start {
         width: 147px;
         background-color: initial;
@@ -206,7 +214,7 @@ div.navbar-catagories {
 
 /*Navbar-logo*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     div.Navbar-start {
         order: 1;
         width: 147px;
@@ -214,7 +222,7 @@ div.navbar-catagories {
     }
 }
 
-@media screen and (min-width:770px) {
+@media screen and (min-width: 770px) {
     div.logo {
         width: 74px;
         margin-right: 0px;
@@ -226,7 +234,7 @@ div.navbar-catagories {
     }
 }
 
-@media screen and (min-width:1070px) {
+@media screen and (min-width: 1070px) {
     div.Navbar-start {
         display: flex;
         width: 200px;
@@ -246,7 +254,7 @@ div.navbar-catagories {
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
     div.Navbar-start {
         width: 80px;
         background-color: initial;
@@ -256,7 +264,7 @@ div.navbar-catagories {
     }
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width: 300px) {
     div.logo img {
         width: 48px;
     }
@@ -269,13 +277,13 @@ div.navbar-mobile-menu i {
     color: rgb(38, 38, 39);
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
     div.navbar-mobile-menu i {
         font-size: 25px;
     }
 }
 
-@media screen and (min-width:375px) {
+@media screen and (min-width: 375px) {
     div.navbar-mobile-menu i {
         font-size: 25px;
     }
@@ -291,7 +299,7 @@ div.Navbar-center-serch {
     flex-grow: 1;
     height: 45px;
     margin: 10px 0px;
-    padding: 0px 1%;
+    padding: 0px;
 }
 
 
@@ -319,7 +327,7 @@ form {
     flex-shrink: 0;
 }
 
-@media screen and (max-width:645px) {
+@media screen and (max-width: 645px) {
     div.form-dropdown {
         display: none;
     }
@@ -381,7 +389,7 @@ div.country img {
     height: 15px;
 }
 
-@media screen and (min-width:1070px) {
+@media screen and (min-width: 1070px) {
     div.form-dropdown {
         width: 57px;
         background-color: initial;
@@ -402,7 +410,7 @@ div.Navbar-end a {
     background-color: initial;
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     div.Navbar-end {
         background-color: initial;
         width: 346px;
@@ -410,7 +418,7 @@ div.Navbar-end a {
     }
 }
 
-@media screen and (max-width:293px) {
+@media screen and (max-width: 293px) {
     div.Navbar-end {
         width: auto;
         padding-right: 8px;
@@ -431,7 +439,7 @@ span.desktop-navbar-end {
     display: none;
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     span.desktop-navbar-end {
         display: initial;
     }
@@ -443,7 +451,7 @@ span.desktop-navbar-end {
 
 /* END OF Interchange of text in navbar end */
 
-@media screen and (min-width:1070px) {
+@media screen and (min-width: 1070px) {
     div.Navbar-end {
         background-color: initial;
         width: 335px;
@@ -457,7 +465,7 @@ span.desktop-navbar-end {
 
 /* FOR MOBILE SCREENS */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     div.Navbar-center-serch {
         order: 3;
         width: 500px;
@@ -477,13 +485,116 @@ span.desktop-navbar-end {
         order: 2;
     }
     form {
-        background-color: #FFFFFF;
+        background-color: #ffffff;
     }
     div.serchbar input {
-        background-color: #FFFFFF;
+        background-color: #ffffff;
     }
     nav {
         padding-top: 5px;
         padding-left: 5px;
+    }
+}
+
+
+/* BREAD CRUMBS */
+
+div.breadcrumbs {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 0px 8px 15px;
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+div.breadcrumbs a {
+    padding: 0px;
+}
+
+div.breadcrumbs ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 400px) {
+    div.breadcrumbs {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+}
+
+
+/* BETA */
+
+div.shop-category-text {
+    background-color: lime;
+}
+
+
+/* BETA */
+
+
+/* Shop category */
+
+div.shop_category {
+    background-color: chocolate;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+div.shop-category-parent {
+    display: flex;
+}
+
+div.shop-category-child {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    div.shop-category-parent {
+        gap: 4%;
+        flex-wrap: wrap;
+    }
+    div.shop-category-child {
+        width: calc(96% / 2);
+        height: 100px;
+        background-color: rgb(40, 151, 133);
+    }
+    div.shop-category-child.child-3 {
+        margin: 4% auto 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    div.shop-category-parent {
+        gap: 2%;
+    }
+    div.shop-category-child {
+        width: calc(96% / 3);
+        height: 100px;
+        background-color: rgb(174, 0, 255);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    div.shop-category-parent {
+        gap: 2%;
+    }
+    div.shop-category-child {
+        width: calc(94% / 4);
+        height: 100px;
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    div.shop-category-parent {
+        gap: 2.5%;
+    }
+    div.shop-category-child {
+        width: 18%;
+        height: 100px;
+        background-color: lime;
     }
 }
